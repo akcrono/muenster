@@ -1,0 +1,11 @@
+<ul>
+  <%@companies.each do |company| %>
+    <li><ul>
+      <li><a href="/companies/<%=company.id%>"><%=company.name%></a></li>
+      <li><%=company.location%></li>
+      <li><%=company.industry%></li>
+      <li><%=company.description || "No description" %></li>
+    </ul></li>
+  <%end%>
+</ul>
+

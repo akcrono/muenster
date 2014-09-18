@@ -1,0 +1,4 @@
+<ul>
+  <%@jobs.each do |job| %>
+    <li><a href="/jobs/<%=job.id%>"><%=job.title%></a> - <a href="/companies/<%=job.company.id%>/"><%=job.company.name%></a>, <%=job.company.location%></li>
+  <%end%>
